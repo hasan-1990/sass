@@ -1,0 +1,843 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f8f8;
+  padding: 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+header a {
+  text-decoration: none;
+}
+header .brand-name {
+  font-size: 1.5rem;
+  color: #d8a288;
+}
+header div nav ul {
+  display: flex;
+}
+header div nav ul li {
+  padding: 0 3rem;
+  list-style: none;
+}
+header div nav ul li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #424141;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: space-evenly;
+}
+.banner div p {
+  font-size: 1.5rem;
+  color: #424141;
+  font-weight: 550;
+  padding: 10px 0;
+}
+.banner div p a {
+  text-decoration: none;
+}
+.banner div button {
+  width: 120px;
+  height: 40px;
+  font-size: 1rem;
+  color: #e4bca9;
+  border: #e4bca9;
+}
+.banner img {
+  width: 40rem;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+}
+
+.discription1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.discription1 p {
+  width: 50%;
+  padding-left: 50px;
+}
+.discription1 p:nth-child(1) {
+  font-size: 20px;
+}
+.discription1 p:nth-child(2) {
+  font-size: 1rem;
+  color: #d8a288;
+  font-size: 48px;
+  font-weight: bolder;
+  padding: 100px 150px;
+}
+
+.relax {
+  display: flex;
+  width: 100%;
+  height: 54rem;
+  background-color: #d8a288;
+  justify-content: center;
+  align-items: center;
+}
+.relax .text1 {
+  justify-content: space-around;
+  padding: 30px;
+  width: 90%;
+}
+.relax .text1 .colorsamole {
+  width: 100px;
+  height: 100px;
+  border: 100%;
+  font-size: 1.5rem;
+  color: #e4bca9;
+}
+.relax .text1 p {
+  font-size: 1.5rem;
+  color: #424141;
+  padding: 20px 0;
+  align-items: flex-start;
+  text-align: left;
+}
+.relax .text1 p a {
+  text-decoration: none;
+}
+.relax div {
+  width: 80%;
+  height: 47rem;
+  background-color: white;
+  text-align: center;
+}
+.relax .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.relax .container img {
+  width: 20rem;
+}
+
+.wave {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  padding: 50px;
+  width: 60%;
+  height: 50%;
+  position: relative;
+  left: 20%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.wave .inside1 {
+  display: block;
+  justify-content: center;
+  align-items: left;
+  width: 50%;
+  height: 33rem;
+  background-color: #eadad2;
+}
+.wave .inside1 .cycle1 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  z-index: 1000000;
+  position: relative;
+  left: 90px;
+  top: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.wave .inside1 .cycle1 p {
+  font-size: 3rem;
+  color: #e4bca9;
+  top: 30px;
+  left: 10px;
+}
+.wave .inside1 div {
+  font-size: 2.5rem;
+  color: #e4bca9;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 80px;
+  left: 50px;
+  font-weight: bolder;
+}
+.wave .inside1 div p:nth-child(2) {
+  font-size: 1.5rem;
+  color: #424141;
+  width: 200px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.bt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bt button {
+  width: 250px;
+  height: 50px;
+  font-size: 1rem;
+  color: #e4bca9;
+  border: #e4bca9;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.mini {
+  width: 100%;
+  height: 50rem;
+  background-color: #d7b4a3;
+  display: flex;
+  margin-top: 50px;
+  justify-content: left;
+}
+.mini div {
+  width: 50%;
+}
+.mini div p {
+  font-size: 3rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.mini div img {
+  width: 65%;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.mini .text2 {
+  width: 50%;
+  padding: 20px;
+  background-color: white;
+  position: relative;
+}
+.mini .text2 p {
+  font-size: 1.5rem;
+  color: #424141;
+  padding: 20px;
+  text-align: left;
+  justify-content: right;
+}
+.mini .text2 p:nth-child(2) {
+  padding-top: 50px;
+  font-size: xx-large;
+}
+.mini .text2 .tittle2,
+.mini .text2 p:nth-child(1) {
+  padding-top: 50px;
+  font-size: 40px;
+  font-size: 2.5rem;
+  color: #d8a288;
+}
+
+.text-before-picture {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.text-before-picture p:nth-child(1) {
+  font-size: 1.5rem;
+  color: #424141;
+  font-weight: bold;
+  text-align: center;
+}
+.text-before-picture p:nth-child(2) {
+  font-size: 1.5rem;
+  color: #424141;
+  text-align: center;
+}
+
+.gridpic {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.gridpic img {
+  width: 20rem;
+  height: 20rem;
+}
+.gridpic .box-text {
+  width: 20rem;
+  height: 20rem;
+  background-color: #d8a288;
+  padding: 10px;
+}
+.gridpic .box-text p:nth-child(1) {
+  text-align: center;
+  justify-content: center;
+  font-size: 24px;
+}
+.gridpic .box-text p:nth-child(2) {
+  text-align: center;
+  justify-content: right;
+  font-size: 20px;
+  font-size: 1.5rem;
+  color: #424141;
+}
+
+.button-n {
+  margin-top: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d8a288;
+  height: 100px;
+}
+.footer p {
+  font-size: 1.5rem;
+  color: #424141;
+}
+
+.endpicture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: #d3bdb3;
+  width: 70%;
+  margin-top: 17rem;
+}
+.endpicture img {
+  width: 35rem;
+  height: 35rem;
+  margin-left: 70rem;
+}
+.endpicture div.boxin {
+  align-items: center;
+  position: absolute;
+  justify-content: center;
+  width: 50%;
+  height: 30%;
+}
+.endpicture div.boxin div.textline {
+  display: flex;
+}
+.endpicture div.boxin div.textline .text3 {
+  position: relative;
+  top: 50px;
+  left: 10px;
+  height: 10%;
+  background-color: white;
+  padding: 0 50px;
+  font-size: 24px;
+  width: 50%;
+  padding: 30px 20px;
+}
+.endpicture div.boxin div.textline .text3 p:nth-child(1) {
+  font-size: 1.5rem;
+  color: #d8a288;
+  font-size: 24px;
+  font-weight: 800;
+  padding: 20px;
+}
+
+.contact-us {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 50px;
+  width: 100%;
+}
+.contact-us .contact p:nth-child(1) {
+  font-size: 1.5rem;
+  color: #d8a288;
+  font-size: 32px;
+  font-weight: 800;
+  padding: 0 80px;
+}
+.contact-us .contact p:nth-child(2) {
+  font-size: 1.5rem;
+  color: #424141;
+  font-size: 24px;
+  padding-top: 80px;
+  padding-left: 80px;
+}
+.contact-us .contact .email {
+  font-size: 1.5rem;
+  color: #d8a288;
+  font-size: 24px;
+  padding-left: 80px;
+  text-decoration: none;
+  padding-left: 80px;
+}
+.contact-us .contact .follow {
+  font-size: 1.5rem;
+  color: #424141;
+  font-size: 24px;
+  padding-top: 20px;
+  padding-left: 80px;
+}
+.contact-us .contact .policy {
+  font-size: 1.5rem;
+  color: #424141;
+  font-size: 24px;
+  padding-left: 80px;
+}
+.contact-us .Questions {
+  width: 50%;
+  height: 40rem;
+  background-color: #d8a288;
+  padding: 20px;
+  display: block;
+}
+.contact-us .Questions .toptittle {
+  font-size: 1.5rem;
+  color: #424141;
+  font-size: 18px;
+  font-weight: 800;
+  margin-top: 20px;
+  text-align: center;
+  width: 50%;
+}
+.contact-us .Questions p {
+  font-size: 1.5rem;
+  color: #424141;
+  font-size: 18px;
+  font-weight: 800;
+  margin-top: 20px;
+  width: 50%;
+  position: relative;
+  margin-left: -4px;
+}
+.contact-us .name {
+  width: 90%;
+  height: 2rem;
+  margin-top: 10px;
+  justify-content: flex-start;
+}
+.contact-us .Message {
+  width: 90%;
+  height: 15rem;
+  margin-top: 10px;
+  justify-content: flex-start;
+}
+.contact-us button {
+  width: 90%;
+  height: 2rem;
+  margin-top: 10px;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.contact-us button button {
+  width: 250px;
+  height: 50px;
+  font-size: 1rem;
+  color: #e4bca9;
+  border: #e4bca9;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+footer {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 15rem;
+  background-color: black;
+}
+footer .footertext {
+  color: rgb(116, 113, 113);
+  font-size: 20px;
+  margin-top: 50px;
+  position: relative;
+  top: 20px;
+}
+footer .html {
+  color: white;
+  font-size: 20px;
+  margin-top: 50px;
+  position: relative;
+  top: 30px;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .banner {
+    flex-direction: column;
+  }
+  .banner img {
+    width: 100%;
+  }
+  .banner div p {
+    text-align: center;
+  }
+  .discription1 {
+    flex-direction: column;
+  }
+  .discription1 p {
+    width: 100%;
+    text-align: center;
+  }
+  .relax {
+    flex-direction: column;
+  }
+  .relax .text1 {
+    width: 100%;
+  }
+  .relax .text1 p {
+    text-align: center;
+  }
+  .relax .text1 .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 50%;
+  }
+  .relax div {
+    width: 100%;
+  }
+  .wave {
+    flex-direction: column;
+  }
+  .wave .inside1 {
+    width: 100%;
+  }
+  .wave .inside1 .cycle1 {
+    left: 40%;
+    top: 0;
+  }
+  .wave .inside1 div {
+    top: 0;
+    left: 30%;
+  }
+}
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+  }
+  .banner img {
+    width: 100%;
+  }
+  .banner div .topb {
+    left: -100px;
+  }
+  .banner div p {
+    text-align: center;
+  }
+  .discription1 {
+    flex-direction: column;
+  }
+  .discription1 p {
+    width: 100%;
+    text-align: center;
+  }
+  .relax {
+    flex-direction: column;
+  }
+  .relax .text1 {
+    width: 100%;
+  }
+  .relax .text1 p {
+    text-align: center;
+  }
+  .relax div {
+    width: 100%;
+  }
+  .wave {
+    flex-direction: column;
+  }
+  .wave .inside1 {
+    position: relative;
+    width: 200%;
+    left: -50%;
+    justify-content: center;
+    align-items: center;
+  }
+  .wave .inside1 .cycle1 {
+    left: 40%;
+    top: 15px;
+  }
+  .wave .inside1 .cycle1 p {
+    position: relative;
+    top: 0%;
+    right: 0%;
+  }
+  .wave .inside1 .cycle1 div {
+    position: relative;
+    top: 50px;
+    left: 40%;
+    margin-top: 500px;
+  }
+  .wave .inside1 p {
+    position: relative;
+    top: 50px;
+    left: 15px;
+  }
+  .mini .text2 {
+    width: 50%;
+    height: 100%;
+  }
+  .mini .text2 p:nth-child(1) {
+    text-align: center;
+    font-size: 21px;
+    top: -60px;
+    position: relative;
+  }
+  .mini .text2 p:nth-child(2) {
+    text-align: center;
+    font-size: 21px;
+    top: -110px;
+    position: relative;
+  }
+  .mini .text2 .bt {
+    position: relative;
+    top: -140px;
+    font-size: 15px;
+    width: 50%;
+    height: 20%;
+  }
+  .mini .text2 .bt p {
+    font-size: 10px;
+  }
+  .mini .text2 .tittle2 {
+    font-size: 30px;
+    top: -220px;
+    position: relative;
+    font-size: 21px;
+  }
+  .mini .text2 p:last-child {
+    top: -220px;
+    position: relative;
+    font-size: 21px;
+  }
+  .gridpic {
+    flex-wrap: nowrap;
+  }
+  .gridpic img {
+    width: 86%;
+    height: 25%;
+  }
+  .gridpic .box-text {
+    width: 117%;
+    height: 25%;
+  }
+  .gridpic .box-text p:nth-child(1) {
+    font-size: 21px;
+  }
+  .gridpic .box-text p:nth-child(2) {
+    font-size: 21px;
+  }
+  .endpicture {
+    flex-direction: column;
+    width: 50%;
+  }
+  .endpicture img {
+    width: 150%;
+    height: 50%;
+    position: relative;
+    left: -260px;
+  }
+  .textline {
+    width: 70%;
+  }
+  .textline .text3 {
+    width: 100%;
+    height: 100%;
+  }
+  .textline .text3 p:nth-child(1) {
+    font-size: 15px;
+  }
+  .textline .text3 p:nth-child(2) {
+    font-size: 15px;
+  }
+  .contact-us {
+    flex-direction: column;
+  }
+  .contact-us .contact {
+    padding-bottom: 20px;
+  }
+  .contact-us .contact p:nth-child(1) {
+    font-size: 21px;
+  }
+  .contact-us .contact p:nth-child(2) {
+    font-size: 21px;
+  }
+  .contact-us .contact .email {
+    font-size: 21px;
+  }
+  .contact-us .contact .follow {
+    font-size: 21px;
+  }
+  .contact-us .contact .policy {
+    font-size: 21px;
+  }
+  .contact-us .Questions {
+    width: 100%;
+    height: 100%;
+  }
+  .contact-us .Questions .toptittle {
+    font-size: 15px;
+  }
+  .contact-us .Questions p {
+    font-size: 15px;
+  }
+  .contact-us .name {
+    width: 100%;
+    height: 2rem;
+  }
+  .contact-us .Message {
+    width: 100%;
+    height: 15rem;
+  }
+  .contact-us button {
+    width: 100%;
+    height: 2rem;
+  }
+  .contact-us button button {
+    width: 250px;
+    height: 50px;
+    font-size: 15px;
+  }
+  .footertext {
+    width: 95%;
+    font-size: 10px;
+    text-align: center;
+    left: 15px;
+  }
+}
+@media (min-width: 0px) and (max-width: 480px) {
+  header {
+    display: block;
+  }
+  header .brand-name {
+    font-size: 1.5rem;
+    color: #d8a288;
+  }
+  header div nav {
+    width: 100%;
+  }
+  header div nav ul {
+    display: flex;
+  }
+  header div nav ul li {
+    padding: 10px;
+    list-style: none;
+  }
+  header div nav ul li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #424141;
+  }
+  header .banner {
+    flex-direction: column;
+  }
+  header .banner img {
+    width: 100%;
+  }
+  header .banner div .topb {
+    left: -100px;
+  }
+  header .banner div p {
+    text-align: center;
+  }
+  header .wave {
+    flex-direction: column;
+  }
+  header .gridpic {
+    flex-wrap: nowrap;
+  }
+  header .gridpic img {
+    width: 86%;
+  }
+  .discription1 p:nth-child(2) {
+    color: #d8a288;
+    z-index: 9999999;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+    position: relative;
+    top: -10px;
+  }
+  .relax {
+    flex-direction: column;
+  }
+  .relax .text1 {
+    width: 100%;
+  }
+  .relax .text1 p:nth-child(1) {
+    text-align: center;
+    font-size: 24px;
+    position: relative;
+    top: 20px;
+  }
+  .relax div {
+    width: 100%;
+  }
+  .container img {
+    width: 100px;
+    height: 130px;
+    position: relative;
+    left: 10%;
+    top: -30px;
+  }
+  .wave {
+    flex-direction: column;
+  }
+  .wave .inside1 {
+    width: 250%;
+    position: relative;
+    left: -140px;
+  }
+  .wave .inside1 .cycle1 {
+    left: 40%;
+    top: 0;
+  }
+  .wave .inside1 .cycle1 p {
+    margin-right: 100px;
+  }
+  .wave .inside1 div {
+    top: 0;
+    left: 0;
+  }
+  .wave .inside1 div p {
+    margin-left: 100px;
+  }
+  .text2 p:nth-child(2) {
+    font-size: 10px;
+  }
+  .endpicture img {
+    position: relative;
+    left: -370px;
+  }
+  .endpicture div.boxin div.textline .text3 p:nth-child(1) {
+    font-size: 15px;
+    position: relative;
+    left: -18px;
+  }
+}/*# sourceMappingURL=style.css.map */

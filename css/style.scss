@@ -1,0 +1,965 @@
+@import "mixins";
+@import "variables";
+
+
+*{
+ @include reset;
+}
+body{
+    background-color: $backgroundPrimeryColor;
+    padding: 1rem;
+}
+// header-----section-----********
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+   a{
+    text-decoration: none
+   }
+    .brand-name{
+        @include textstyle(1.5rem, $secundaryTextColor);
+     
+    }
+
+   div{
+    nav{
+        ul{
+            display: flex;
+            
+            li{
+                padding: 0 3rem;
+                a{
+                    text-decoration: none;
+                    @include textstyle(1.5rem, $primeryTextColor);
+                }
+                list-style: none;
+                
+            }
+        }
+    }
+   }
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-evenly;
+    div{
+        p{
+            @include textstyle(1.5rem, $primeryTextColor);
+            font-weight: 550;
+            padding: 10px 0;
+            a{
+                text-decoration: none;
+            }
+        }
+        button{
+            width: 120px;
+            height: 40px;
+            @include textstyle(1rem, $backgroundsecendaryColor);
+            border: $backgroundsecendaryColor;
+        }
+    }
+    img{
+        width: 40rem;
+        border-radius: 10%;
+        -webkit-border-radius: 10%;
+        -moz-border-radius: 10%;
+        -ms-border-radius: 10%;
+        -o-border-radius: 10%;
+}
+   
+}
+.discription1{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+    p{
+        width: 50%;
+        padding-left: 50px;
+    }
+    p:nth-child(1){
+        font-size: 20px;
+    }
+    p:nth-child(2){
+        @include textstyle(1rem, $secundaryTextColor);
+        font-size: 48px;
+        font-weight: bolder;
+        padding: 100px 150px;
+
+    }
+}
+.relax{
+    display: flex;
+    width: 100%;
+    height: 54rem;
+    background-color: #d8a288;
+    justify-content: center;
+  align-items: center;
+  .text1{
+    justify-content: space-around;
+    padding: 30px;
+    width: 90%;
+    .colorsamole{
+        width: 100px;
+        height: 100px;
+        border: 100%;
+        @include textstyle(1.5rem, $backgroundsecendaryColor);
+
+
+
+        
+    }
+    
+    
+    p{
+        @include textstyle(1.5rem, $primeryTextColor);
+        padding: 20px 0;
+        align-items: flex-start;
+        text-align: left;
+        a{
+            text-decoration: none;
+        }
+        
+    }
+}
+    div{
+        width: 80%;
+        height: 47rem;
+        background-color: white;
+        text-align: center;
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        img{
+            width: 20rem;
+            
+           
+        }
+    }
+
+}
+.wave {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    padding: 50px;
+    width: 60%;
+    height: 50%;
+    position: relative;
+    left: calc(50% - 30%);
+    flex-wrap: wrap;
+    justify-content: center;
+    
+
+    .inside1 {
+        display: block;
+        justify-content: center;
+        align-items: left;
+        width: 50%;
+        height: 33rem;
+        background-color: #eadad2;
+        
+        
+        
+        
+        
+
+        .cycle1 {
+            display: flex;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            z-index: 1000000;
+            position: relative;
+            left: 90px;
+            top:50px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            p {
+                @include textstyle(3rem, $backgroundsecendaryColor);
+                
+                top: 30px;
+                left: 10px;
+            }
+         
+        }
+        
+        div {
+            @include textstyle(2.5rem, $backgroundsecendaryColor);
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            top: 80px;
+            left: 50px;
+            font-weight: bolder;
+    
+            p:nth-child(2) {
+                @include textstyle(1.5rem, $primeryTextColor);
+                width: 200px;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 20px;
+                
+            }
+    
+          
+        }
+    }
+
+}
+   .bt{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        
+        button{
+            width: 250px;
+            height: 50px;
+            @include textstyle(1rem, $backgroundsecendaryColor);
+            border: $backgroundsecendaryColor;
+            padding: 10px 20px;
+            cursor: pointer;
+            
+        }
+    }
+    
+.mini{
+    width: 100%;
+    height: 50rem;
+    background-color: #d7b4a3;
+    display: flex;
+    margin-top: 50px;
+    justify-content: left;
+    div{
+        width: 50%;
+        p{
+            font-size: 3rem;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        
+        }
+        img{
+            width: 65%;
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-bottom: 20px;
+        }
+    }
+    .text2{
+        width: 50%;
+        padding: 20px;
+        background-color: white;
+        position: relative;
+        
+     
+        p{
+            @include textstyle(1.5rem, $primeryTextColor);
+            padding: 20px;
+            text-align: left;
+            justify-content: right;
+        }
+        p:nth-child(2){
+            padding-top: 50px;
+            font-size: xx-large;
+        }
+        .tittle2,
+        p:nth-child(1)
+        {
+            
+            padding-top: 50px;
+            font-size: 40px;
+            @include textstyle(2.5rem, $secundaryTextColor);
+        }
+    }
+}
+.text-before-picture{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    p:nth-child(1){
+        
+        @include textstyle(1.5rem, $primeryTextColor);
+        font-weight: bold;
+        text-align: center;
+    }
+    p:nth-child(2){
+        @include textstyle(1.5rem, $primeryTextColor);
+        
+        text-align: center;
+    }
+    
+}
+.gridpic{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    flex-wrap: wrap;
+    img{
+        width: 20rem;
+        height: 20rem;
+       
+    }
+    .box-text{
+        
+        width: 20rem;
+        height: 20rem;
+        background-color: #d8a288;
+        padding: 10px;
+        p:nth-child(1){
+
+            
+            
+            text-align: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+        
+        p:nth-child(2){
+            
+            text-align: center;
+            justify-content: right;
+            font-size: 20px;
+            @include textstyle(1.5rem, $primeryTextColor);
+          
+            
+          
+            
+        }
+    }
+}
+.button-n{
+    margin-top: 20px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d8a288;
+    height: 100px;
+    p{
+        @include textstyle(1.5rem, $primeryTextColor);
+    }
+}
+.endpicture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #d3bdb3;
+    width: 70%;
+    
+    margin-top: 17rem;
+    img{
+        width: 35rem;
+        height: 35rem;
+        margin-left: 70rem;
+    }
+    div.boxin{
+        
+        
+        align-items: center;
+        position: absolute;
+        justify-content: center;
+        width: 50%;
+        height: 30%;
+       
+        
+        
+        
+        div.textline{
+            
+
+
+            
+            display: flex;        
+            .text3{
+                
+                position: relative;
+                top: 50px;
+                left: 10px;
+                height: 10%;
+                background-color: white;
+                padding: 0 50px;
+                
+                font-size: 24px;
+                width: 50%;
+                padding: 30px 20px;
+                p:nth-child(1){
+                    @include textstyle(1.5rem, $secundaryTextColor);
+                    font-size: 24px;
+                    font-weight: 800;
+                    padding: 20px;
+                }
+            }
+               
+            
+        }
+    }  
+}
+.contact-us{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 50px;
+    
+    width: 100%;
+   .contact{
+    
+    p:nth-child(1){
+        @include textstyle(1.5rem, $secundaryTextColor);
+        font-size: 32px;
+        font-weight: 800;
+        padding: 0 80px;
+    
+    }
+    p:nth-child(2){
+        @include textstyle(1.5rem, $primeryTextColor);
+        font-size: 24px;
+        padding-top:80px;
+        padding-left: 80px;
+
+    }
+    .email{
+        @include textstyle(1.5rem, $secundaryTextColor);
+        font-size: 24px;
+        
+        padding-left: 80px;
+        text-decoration: none;
+        padding-left: 80px ;
+       
+    }
+    .follow{
+        @include textstyle(1.5rem, $primeryTextColor);
+        font-size: 24px;
+        padding-top: 20px;
+        padding-left: 80px;
+    }
+    .policy{
+        @include textstyle(1.5rem, $primeryTextColor);
+        font-size: 24px;
+        padding-left: 80px;
+    }
+   }
+   .Questions{
+    
+    width:50%;
+    height: 40rem;
+    background-color: #d8a288;
+   
+    padding: 20px;
+    
+    display: block;
+    .toptittle{
+        @include textstyle(1.5rem, $primeryTextColor);
+        font-size: 18px;
+        font-weight: 800;
+        margin-top: 20px;
+        text-align: center;
+        width: 50%;
+        
+            }
+    p{
+        
+        @include textstyle(1.5rem, $primeryTextColor);
+        font-size: 18px;
+        font-weight: 800;
+        margin-top: 20px;
+        
+        width: 50%;
+        position: relative;
+        margin-left: -4px;
+        
+    }
+   }
+   .name{
+    width: 90%;
+    height: 2rem;
+    margin-top: 10px;
+    justify-content: flex-start;
+   }
+   .Message{
+    width: 90%;
+    height: 15rem;
+    margin-top: 10px;
+    justify-content: flex-start;
+   }
+    button{
+     width: 90%;
+     height: 2rem;
+     margin-top: 10px;
+     justify-content: flex-start;
+     cursor: pointer;
+     button{
+          width: 250px;
+          height: 50px;
+          @include textstyle(1rem, $backgroundsecendaryColor);
+          border: $backgroundsecendaryColor;
+          padding: 10px 20px;
+          cursor: pointer;
+     }
+    }
+}
+footer{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center ;
+    height: 15rem;
+    background-color: black;
+    
+    .footertext{
+        color: rgb(116, 113, 113);
+        font-size: 20px;
+        margin-top: 50px;
+        position: relative;
+        top: 20px;
+       
+        
+    }
+    .html{
+        color: white;
+        font-size: 20px;
+        margin-top: 50px;
+        position: relative;
+        top: 30px;
+    }
+}
+
+
+
+
+
+@include media(L){
+    .banner{
+        flex-direction: column;
+        img{
+            width: 100%;
+        }
+        div{
+            p{
+                text-align: center;
+            }
+        }
+    }
+    .discription1{
+        flex-direction: column;
+        p{
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .relax{
+        flex-direction: column;
+        .text1{
+            width: 100%;
+            p{
+                text-align: center;
+            }
+            .container{
+                display: flex;
+                flex-wrap: wrap;
+                width: 50%;
+                height: calc(100% - 50%);
+            
+            }
+        }
+        div{
+            width: 100%;
+        }
+    }
+    .wave{
+        flex-direction: column;
+        .inside1{
+            width: 100%;
+            .cycle1{
+                left: 40%;
+                top: 0;
+            }
+            div{
+                top: 0;
+                left: calc(100% - 70%);
+            }
+        }
+    }
+
+
+
+   
+    
+}
+@include media(M){
+    .banner{
+        flex-direction: column;
+        img{
+            width: 100%;
+        }
+        div{
+            .topb{
+                left: -100px;
+            }
+            p{
+                text-align: center;
+            }
+        }
+    }
+    .discription1{
+        flex-direction: column;
+        p{
+            width: 100%;
+            text-align: center;
+        }
+    }
+    .relax{
+        flex-direction: column;
+        .text1{
+            width: 100%;
+            p{
+                text-align: center;
+            }
+        }
+        div{
+            width: 100%;
+        }
+    }
+    .wave{
+        flex-direction: column;
+        .inside1{
+            position: relative;
+            width: 200%;
+            left: calc(100% - 150%);
+            justify-content: center;
+            align-items: center;
+            
+            .cycle1{
+                
+                left: calc(50% - 10%);
+                top: 15px;
+                p{
+                    position: relative;
+                    top: calc(50% - 50%);
+                    right: calc(50% - 50%);
+                
+                }
+                div{
+                    position: relative;
+                    top: 50px;
+                    left:calc(90% - 50%);
+                    margin-top: 500px;
+                    
+                }
+            }
+            p{
+                position: relative;
+                top: 50px;
+                left: 15px;
+            }
+        }
+    }
+    .mini{
+       
+        
+        .text2{
+            width: 50%;
+            height: 100%;
+            
+            p:nth-child(1){
+                text-align: center;
+                font-size: 21px;
+                top: -60px;
+                position: relative;
+            }
+            p:nth-child(2){
+                text-align: center;
+                font-size: 21px;
+                top: -110px;
+                position: relative;
+            }
+            .bt{
+                position: relative;
+                top: -140px;
+                font-size: 15px;
+                width: 50%;
+                height: 20%;
+                p{
+                    font-size: 10px;
+                }
+            }
+            .tittle2{
+                font-size: 30px;
+                top: -220px;
+                position: relative;
+                font-size: 21px;
+                
+            }
+            p:last-child{
+                top: -220px;
+                position: relative;
+                font-size: 21px;
+            }
+        }
+    }
+    
+
+        .gridpic{
+            flex-wrap: nowrap;
+            img{
+                
+                width: 86%;
+                height:calc(100% - 75%);
+            }
+            .box-text{
+                
+                width: 117%;
+                height: calc(100% - 75%);
+                p:nth-child(1){
+                    font-size: 21px;
+                }
+                p:nth-child(2){
+                    font-size: 21px;
+                }
+            }
+        }
+
+        .endpicture{
+            flex-direction: column;
+            width: 50%;
+            img{
+                width: 150%;
+                height: 50%;
+                position: relative;
+                left: -260px;
+            
+            }
+            
+        }
+        
+        .textline{
+            width: 70%;
+            .text3{
+                width: 100%;
+                height: 100%;
+                p:nth-child(1){
+                    font-size: 15px;
+                }
+                p:nth-child(2){
+                    font-size: 15px;
+                }
+            }
+        }
+
+
+        .contact-us{
+            flex-direction: column;
+            .contact{
+                padding-bottom: 20px;
+                p:nth-child(1){
+                    font-size: 21px;
+                }
+                p:nth-child(2){
+                    font-size: 21px;
+                }
+                .email{
+                    font-size: 21px;
+                }
+                .follow{
+                    font-size: 21px;
+                }
+                .policy{
+                    font-size: 21px;
+                }
+            }
+            .Questions{
+                width: 100%;
+                height: 100%;
+                .toptittle{
+                    font-size: 15px;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+            .name{
+                width: 100%;
+                height: 2rem;
+            }
+            .Message{
+                width: 100%;
+                height: 15rem;
+            }
+            button{
+                width: 100%;
+                height: 2rem;
+                button{
+                    width: 250px;
+                    height: 50px;
+                    font-size: 15px;
+                }
+            }
+        }
+
+       .footertext{
+        width: 95%;
+        font-size: 10px;
+        text-align: center;
+        left: 15px;
+       }
+    
+}
+@include media(S){
+    
+    header{
+        display: block;
+        .brand-name{
+            @include textstyle(1.5rem, $secundaryTextColor);
+        }
+        div{
+            nav{
+                width: 100%;
+                ul{
+                    display: flex;
+                    
+                    li{
+                        padding: 10px;
+                        a{
+                            text-decoration: none;
+                            @include textstyle(1.5rem, $primeryTextColor);
+                        }
+                        list-style: none;
+                        
+                    }
+                }
+            }
+        }
+   
+    .banner{
+        flex-direction: column;
+        img{
+            width: 100%;
+        }
+        div{
+            .topb{
+                left: -100px;
+            }
+            p{
+                text-align: center;
+            }
+        }
+    }   
+    .wave{
+        flex-direction: column;
+        
+    }
+        .gridpic{
+            flex-wrap: nowrap;
+            img{
+                
+                width: 86%;
+            }
+        }  
+    }
+    .discription1{
+        p:nth-child(2){
+            
+                color:#d8a288 ;
+                z-index: 9999999;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                font-size: 25px;
+                position: relative;
+                top: -10px;
+            
+        }
+    }
+    // 
+    .relax{
+        flex-direction: column;
+        .text1{
+            width: 100%;
+            p:nth-child(1){
+                text-align: center;
+                font-size: 24px;
+                position: relative;
+                top: 20px;
+            }
+        }
+        div{
+            width: 100%;
+        }
+    }
+    .container{
+        img{
+            width: 100px;
+            height: 130px;
+            position: relative;
+            left: calc(50% - 40%);
+            top: -30px;
+        }
+    }
+    // 
+ 
+
+    .wave{
+        flex-direction: column;
+        .inside1{
+            width: 250%;
+            position: relative;
+            left: -140px;
+            .cycle1{
+                left: 40%;
+                top: 0;
+                p{
+                    margin-right: 100px;
+                }
+            }
+            div{
+                top: 0;
+                left: 0;
+                p{
+                    margin-left: 100px;
+                }
+            }
+        }
+    }
+
+    .text2{
+        
+        p:nth-child(2){
+            font-size: 10px;
+            
+        }
+    }
+    .endpicture{
+        img{
+            position: relative;
+            left: -370px;
+        }
+    }
+    .endpicture div.boxin div.textline .text3 p:nth-child(1){
+        font-size: 15px;
+        position: relative;
+        left: -18px;
+    }
+    
+   
+}
